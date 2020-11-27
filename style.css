@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 * {
+    box-sizing: border-box;
+    /* transition: all 0.3s ease; */
 
-    height: auto;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: auto;
-    background: rgb(255, 223, 107); 
+    background: #E1332D;    
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
@@ -12,6 +20,9 @@
 .container {
     /* padding: 5px; */
     margin: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
     top: 80px;
     font-size: 1.5rem;
@@ -23,12 +34,14 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    /* background-color: black; */
 
 }
 
 .menu {
 
     width: 30%;
+    /* background-color: palegoldenrod; */
     list-style: none;
     text-emphasis: none;
     text-decoration: none;
@@ -43,19 +56,50 @@
     list-style-type: none;
 }
 
-.list_items , a {
+.list_items , a{
+    display: flex;
+    justify-content: space-between;
     text-emphasis: none;
     text-decoration: none;
+    color: #FFFFFF;
+}
+
+#link_i {
+    transition: all 0.3s ease;
+}
+#link_i:hover {
+    color: #ff8177;
+    transition: all 0.3s ease;
 }
 
 
 .logo {
-    width: auto;
+    width: 10%;
     font-size: 3rem;
-    color: rgb(214, 57, 57);
+    font-weight: 600;
+    color: #FFFFFF;
     justify-content: center;
     align-content: center;
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+
+button {
+    display: inline-block;
+    font-size: 1em;
+    padding: .5em 1.5em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff0081;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+@media screen and (max-width : 1300px) {
+    display: none;
 }
